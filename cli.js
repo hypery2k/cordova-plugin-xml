@@ -2,20 +2,20 @@
 'use strict';
 
 const meow = require('meow');
-const configXml = require('./');
+const configPluginXml = require('./');
 
 const cli = meow({
 	help: [`
 		Usage
-      See https://github.com/mifi/cordova-xml
-		  $ cordova-xml <action> <args>
+      See https://github.com/hypery2k/cordova-plugin-xml
+		  $ cordova-plugin-xml <action> <args>
     Options
       --config Config path
 	`]
 });
 
 try {
-	const config = configXml(cli.flags.config);
+	const config = configPluginXml(cli.flags.config);
 	const action = cli.input.shift();
 	const args = cli.input;
 
