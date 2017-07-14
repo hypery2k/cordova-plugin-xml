@@ -1,15 +1,15 @@
 {
-  "name": "cordova-xml",
-  "version": "1.1.0",
-  "description": "Edit cordova config.xml from the command line or via API",
+  "name": "cordova-plugin-xml",
+  "version": "0.1.0",
+  "description": "Edit cordova plugin.xml from the command line or via API",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/mifi/cordova-xml.git"
+    "url": "https://github.com/hypery2k/cordova-plugin-xml.git"
   },
   "keywords": [
-    "config.xml",
+    "plugin.xml",
     "edit",
     "config",
     "cordova",
@@ -20,17 +20,20 @@
     "author",
     "cli"
   ],
-  "author": {
-    "name": "Mikael Finstad",
-    "email": "finstaden@gmail.com",
-    "url": "mifi.no"
-  },
+  "author": "Martin Reinhardt",
+  "contributors": [
+    {
+      "name": "Mikael Finstad",
+      "email": "finstaden@gmail.com",
+      "url": "mifi.no"
+    }
+  ],
   "files": [
     "index.js",
     "cli.js"
   ],
   "bin": {
-    "cordova-xml": "cli.js"
+    "cordova-plugin-xml": "cli.js"
   },
   "engines": {
     "node": ">=4"
