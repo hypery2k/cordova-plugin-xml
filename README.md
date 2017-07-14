@@ -1,45 +1,35 @@
-# cordova-xml
+# cordova-plugin-xml
 
-Edit cordova config.xml from the command line or via API. Uses the awesome [node-xmlpoke](https://github.com/mikeobrien/node-xmlpoke).
+Edit cordova plugin.xml from the command line or via API. Based on this [node package](https://github.com/mikeobrien/node-xmlpoke).
 
 ## Install
 ```
-npm install --save-dev cordova-xml
+npm install --save-dev cordova-plugin-xml
 ```
 or global:
 ```
-npm install -g cordova-xml
+npm install -g cordova-plugin-xml
 ```
 
 ## CLI Usage
 ```
-cordova-xml <action> <args>
+cordova-plugin-xml <action> <args>
 ```
 
 ## CLI examples
 ```
-cordova-xml setId com.example.myid --config /path/to/config.xml
-cordova-xml setVersion 1.2.3
-cordova-xml setId com.example.myid
-cordova-xml setAndroidVersion 1.4.5
-cordova-xml setIosVersion 1.1.2
-cordova-xml setName TestApp
-cordova-xml setDescription 'my app description'
-cordova-xml setAuthorEmail 'email@example.com'
-cordova-xml setAuthorName 'Author Authsson'
-cordova-xml setAuthorWebsite 'http://example.com'
-cordova-xml setXml "/w:widget/w:platform[@name='android']" '<test>hey</test>'
+cordova-plugin-xml setVersion 1.2.3
 ```
 
 ## lib examples
 ```
-require('cordova-xml')().setId('com.example.myid')
-require('cordova-xml')('/path/to/config.xml').setId('com.example.myid')
+require('cordova-plugin-xml')().setVersion('123')
+require('cordova-plugin-xml')('/path/to/config.xml').setVersion('123')
 ```
 
 ## Use xmlpoke directly
 ```
-const cordovaXml = require('cordova-xml')();
+const cordovaXml = require('cordova-plugin-xml')();
 cordovaXml.withPoke(xml => xml.add("/w:widget/w:platform[@name='android']/something", xml.XmlString('<text>hey</text>')));
 ```
 See [node-xmlpoke](https://github.com/mikeobrien/node-xmlpoke) for more info.
