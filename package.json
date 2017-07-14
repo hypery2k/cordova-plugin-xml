@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-xml",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "Edit cordova plugin.xml from the command line or via API",
   "main": "index.js",
   "scripts": {
