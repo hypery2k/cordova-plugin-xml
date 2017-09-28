@@ -1,6 +1,10 @@
 # cordova-plugin-xml
 
+[![Build Status](https://travis-ci.org/hypery2k/cordova-plugin-xml.svg?branch=master)](https://travis-ci.org/hypery2k/cordova-plugin-xml)
+
 Edit cordova plugin.xml from the command line or via API. Based on this [node package](https://github.com/mikeobrien/node-xmlpoke).
+
+[![NPM](https://nodei.co/npm/cordova-plugin-xml.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/cordova-plugin-xml/)
 
 ## Install
 ```
