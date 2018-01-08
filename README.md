@@ -1,5 +1,7 @@
 # cordova-plugin-xml
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hypery2k/cordova-plugin-xml.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/hypery2k/cordova-plugin-xml.svg?branch=master)](https://travis-ci.org/hypery2k/cordova-plugin-xml)
 
 Edit cordova plugin.xml from the command line or via API. Based on this [node package](https://github.com/mikeobrien/node-xmlpoke).
