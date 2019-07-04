@@ -18,7 +18,9 @@
     "release:patch": "npm run release:pre && npm version patch && npm run release:post && git push origin && git push origin --tags && npm run version-and-push",
     "version-and-push": "git push origin && git push origin --tags && npm run publish-and-merge",
     "publish-and-merge": "git checkout master && git merge develop && git push && git checkout develop && npm publish",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -57,11 +59,13 @@
   "license": "MIT",
   "dependencies": {
     "meow": "^3.7.0",
-    "xmlpoke": "^0.1.16"
+    "xmlpoke": "^0.1.16",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "conventional-changelog-cli": "^1.3.22",
     "jasmine": "^3.3.1",
     "rimraf": "^2.6.3"
-  }
+  },
+  "snyk": true
 }
