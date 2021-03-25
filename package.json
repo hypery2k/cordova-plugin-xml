@@ -56,7 +56,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "meow": "^3.7.0",
+    "meow": "^8.0.0",
     "xmlpoke": "^0.1.16"
   },
   "devDependencies": {
